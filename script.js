@@ -5,9 +5,9 @@ function findLargest(a, b, c) {
 
 	const sortedArr = arr.sort((a,b) => b - a);
 
-	if(a === b && a === c && b === c)
+	if(a === b && a === c )
 	{
-		return 0;
+		return a;
 	}else{
 		return sortedArr[0];
 	}
