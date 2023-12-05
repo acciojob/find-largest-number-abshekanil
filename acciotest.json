@@ -1,0 +1,4 @@
+{
+  "testRepo": "find-largest-number",
+  "pathToFile": "cypress/integration/tests/test.spec.js"
+}
