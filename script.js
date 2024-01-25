@@ -1,16 +1,28 @@
 function findLargest(a, b, c) {
   //your code here
+	let arr = [a, b, c];
+	let isequal = true;
+let largest = Number.MIN_SAFE_INTEGER;
+	for(let i=0; i<arr.length; i++)
+		{
+			if(arr[i] > largest)
+			{
+				isequal = false;
+				largest = arr[i];
+			}
 
-	const arr = [a, b, c];
-
-	const sortedArr = arr.sort((a,b) => b - a);
-
-	if(a === b && a === c )
+			
+		}
+	
+	if(isequal === true)
 	{
-		return a;
-	}else{
-		return sortedArr[0];
+		return arr[0];
 	}
+	
+	return largest;
+	  
+
+	
 	
 }
 
